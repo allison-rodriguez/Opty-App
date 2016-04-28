@@ -784,6 +784,7 @@ events: {
                       this.solutionsPartner=data.organizations[0].organization_fields.partner_name;
                       this.accountMrr=data.organizations[0].organization_fields.account_mrr;
                       this.orgDetails=data.organizations[0].details;
+                      this.churnRisk;
                  //based on the 'High-Risk Account' checkbox at the org level
                       data.organizations[0].churn_risk === true ? this.churnRisk='yes' : this.churnRisk='no';
                       //this.churnRisk=data.organizations[0].churn_risk;
